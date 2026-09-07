@@ -13,6 +13,12 @@ Running log of what has actually been built and verified. Append-only — if som
 - **Task 5 — .env.example**: Created with `REDIS_URL`, `MONGO_URI`, `PORT`, `NODE_ENV`. Copied to real `.env` (gitignored). ✅ Verified.
 - **Task 6 — ESLint + Prettier + Jest**: Installed at root. Note: ESLint v10 was installed, which requires the new flat-config format (`eslint.config.js`), not the old `.eslintrc.json` — switched to flat config accordingly. Prettier (`.prettierrc`) and Jest (`jest.config.js`) configured. Root `package.json` scripts updated (`test`, `lint`). ✅ `npx eslint .` runs clean.
 
+- **Task 7 — Docs moved into `docs/`, README written**: All 5 planning docs + `docs/kickoff.md` moved into `docs/`, correctly cased to match README links (`PRD.md`, `SRS.md`, `architecture.md`, `design.md`, `phases.md`). Root `README.md` in place. Fixed a case-sensitivity issue (Windows renamed files as no-ops on case-only changes — needed a two-step rename via a temp filename). Also caught and fixed an empty `.prettierrc` (0 bytes) missed earlier. ✅ Verified.
+
+## Phase 0 — COMPLETE
+
+All 7 tasks done and verified. First commit made and pushed to GitHub (`main` branch).
+
 ## Current status
 
-Phase 0 is essentially done — only **Task 7** (move planning docs into `docs/`, write stub README) remains before moving to Phase 1.
+Starting **Phase 1: Core Rate Limiting Engine** — the heart of the project. First task: Redis client connection module.
